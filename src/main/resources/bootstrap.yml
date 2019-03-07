@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+    username: test
+    password: test00
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/freepow/spring-cloud-config.git
+  security:
+    user:
+      name: jaeger
+      password: test
